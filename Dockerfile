@@ -31,3 +31,4 @@ COPY /public/blue1.jpeg      app/public/blue1.jpeg
 
 # INSTALLING DEPENDENCIES
 RUN npm install
+RUN npm install firebase

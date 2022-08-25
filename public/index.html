@@ -12,6 +12,25 @@
     <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
 
   </head>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyCQx_8_79agafwbfDp-pEvwvQoFXyndyKE",
+      authDomain: "fullstack-d26ab.firebaseapp.com",
+      projectId: "fullstack-d26ab",
+      storageBucket: "fullstack-d26ab.appspot.com",
+      messagingSenderId: "560087783009",
+      appId: "1:560087783009:web:577cd6dad31b7efed8bc20"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
   <body background="blue1.jpeg">
     <!-- we will put our teact component inside this div -->
     <div id="root" text-align="center"></div>
