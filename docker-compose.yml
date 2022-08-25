@@ -1,0 +1,14 @@
+mongo:
+
+  image: mongo
+  ports:
+    - "27019:27019"
+  restart: always
+web:
+  build: .
+  ports:
+    - "8080:8080"
+  links:
+    - mongo
+  command: node index.js
+
